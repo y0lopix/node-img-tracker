@@ -1,5 +1,4 @@
 const http = require("http");
-const port = 8000;
 
 const requestListener = function (req, res) {
     res.setHeader("Content-Type", "image/png");
@@ -10,6 +9,6 @@ const requestListener = function (req, res) {
 };
 
 const server = http.createServer(requestListener);
-server.listen(port, () => {
+server.listen(process.env.PORT || 80, () => {
     console.log("Serveur démarré");
 });
