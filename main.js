@@ -1,6 +1,6 @@
 const http = require("http");
 const host = 'img-srv.herokuapp.com';
-const port = 80;
+const port = 8080;
 
 const requestListener = function (req, res) {
     res.setHeader("Content-Type", "image/png");
