@@ -1,5 +1,5 @@
 const http = require("http");
-const port = 80;
+const port = 8000;
 
 const requestListener = function (req, res) {
     res.setHeader("Content-Type", "image/png");
