@@ -1,5 +1,5 @@
 const http = require("http");
-const host = 'localhost';
+const host = 'img-srv.herokuapp.com';
 const port = 80;
 
 const requestListener = function (req, res) {
