@@ -1,6 +1,5 @@
 const http = require("http");
-const host = 'img-srv.herokuapp.com';
-const port = 8080;
+const port = 80;
 
 const requestListener = function (req, res) {
     res.setHeader("Content-Type", "image/png");
@@ -11,6 +10,6 @@ const requestListener = function (req, res) {
 };
 
 const server = http.createServer(requestListener);
-server.listen(port, host, () => {
+server.listen(port, () => {
     console.log("Serveur démarré");
 });
